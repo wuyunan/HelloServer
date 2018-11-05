@@ -4,11 +4,11 @@
     "connector": "memory"
   },
   "mongoDs": {
-    "host": "127.0.0.1",
+    "host": "mongo",
     "port": 27017,
     "url": "",
     "database": "helloserver",
-    "password": "password",
+    "password": "",
     "name": "mongoDs",
     "user": "dba",
     "connector": "mongodb"

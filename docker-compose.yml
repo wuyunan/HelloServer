@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  api:
+    image: hello-server
+    container_name: api
+    restart: always
+    depends_on:
+      - mongo
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "3000:3000"
+    volumes:
+      - './test:/home/app/test'
+    networks:
+      - apinet
+  
+  mongo:
+    image: mongo:4.0.2
+    restart: always
+    ports:
+      - "27017:27017"
+    networks:
+      - apinet
+  
+networks:
+  apinet:
