@@ -35,7 +35,27 @@
     "dataSource": "mongoDs",
     "public": false
   },
-  "person": {
+  "Person": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Hospital": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Device": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "DeviceType": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Qrcode": {
     "dataSource": "mongoDs",
     "public": true
   }

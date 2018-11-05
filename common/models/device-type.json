@@ -1,26 +1,18 @@
 {
-  "name": "Person",
-  "plural": "people",
+  "name": "DeviceType",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "firstname": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "lastname": {
-      "type": "string",
+    "value": {
+      "type": "number",
       "required": true
-    },
-    "nickname": {
-      "type": "string",
-      "required": true
-    },
-    "birthday": {
-      "type": "date"
     }
   },
   "validations": [],

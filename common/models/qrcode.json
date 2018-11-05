@@ -1,26 +1,17 @@
 {
-  "name": "Person",
-  "plural": "people",
+  "name": "Qrcode",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "firstname": {
+    "imageUrl": {
       "type": "string",
       "required": true
     },
-    "lastname": {
-      "type": "string",
-      "required": true
-    },
-    "nickname": {
-      "type": "string",
-      "required": true
-    },
-    "birthday": {
-      "type": "date"
+    "sha1": {
+      "type": "string"
     }
   },
   "validations": [],
