@@ -12,7 +12,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "hospital": {
+      "type": "belongsTo",
+      "model": "Hospital",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

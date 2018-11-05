@@ -11,7 +11,7 @@
     "posttest": "npm run lint",
     "resetDB": "node ./server/bin/reset-database.js",
     "build": "docker build -t hello-server .",
-    "restart" :"docker build -t hello-server . && docker-compose up",
+    "restart": "docker build -t hello-server . && docker-compose up",
     "shutdown": "docker-compose down"
   },
   "dependencies": {
