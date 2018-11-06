@@ -5,6 +5,12 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "Timestamp": {
+      "myOption": 1,
+      "anotherOpt": 2
+    }
+  },
   "properties": {
     "name": {
       "type": "string",
@@ -52,6 +58,12 @@
     },
     {
       "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"

@@ -16,18 +16,26 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [ {
-    "accessType": "*",
-    "principalType": "ROLE",
-    "principalId": "$everyone",
-    "permission": "DENY",
-    "property": "*"
-  },
-  {
-    "accessType": "READ",
-    "principalType": "ROLE",
-    "principalId": "$authenticated",
-    "permission": "ALLOW"
-  }],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "*"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
