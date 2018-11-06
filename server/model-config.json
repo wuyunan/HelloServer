@@ -51,11 +51,15 @@
     "dataSource": "mongoDs",
     "public": true
   },
-  "DeviceType": {
+  "Qrcode": {
     "dataSource": "mongoDs",
     "public": true
   },
-  "Qrcode": {
+  "Ward": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Category": {
     "dataSource": "mongoDs",
     "public": true
   }

@@ -1,5 +1,5 @@
 {
-  "name": "Hospital",
+  "name": "Ward",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -7,20 +7,19 @@
   },
   "properties": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   },
   "validations": [],
   "relations": {
+    "hospital": {
+      "type": "belongsTo",
+      "model": "Hospital",
+      "foreignKey": ""
+    },
     "devices": {
       "type": "hasMany",
       "model": "Device",
-      "foreignKey": ""
-    },
-    "wards": {
-      "type": "hasMany",
-      "model": "Ward",
       "foreignKey": ""
     }
   },

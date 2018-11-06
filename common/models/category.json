@@ -1,5 +1,5 @@
 {
-  "name": "DeviceType",
+  "name": "Category",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,13 +10,21 @@
       "type": "string",
       "required": true
     },
-    "value": {
-      "type": "number",
-      "required": true
+    "desc": {
+      "type": "string"
+    },
+    "picUrl": {
+      "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "devices": {
+      "type": "hasMany",
+      "model": "Device",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

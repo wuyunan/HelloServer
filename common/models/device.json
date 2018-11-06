@@ -9,6 +9,10 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "equipmentNumber": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
@@ -16,6 +20,16 @@
     "hospital": {
       "type": "belongsTo",
       "model": "Hospital",
+      "foreignKey": ""
+    },
+    "ward": {
+      "type": "belongsTo",
+      "model": "Ward",
+      "foreignKey": ""
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
       "foreignKey": ""
     }
   },
