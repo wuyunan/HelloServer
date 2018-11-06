@@ -12,7 +12,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "device": {
+      "type": "belongsTo",
+      "model": "Device",
+      "foreignKey": ""
+    },
+    "hospital": {
+      "type": "belongsTo",
+      "model": "Hospital",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
