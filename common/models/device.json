@@ -31,6 +31,15 @@
       "type": "belongsTo",
       "model": "Category",
       "foreignKey": ""
+    },
+    "qrcodeFn": {
+      "type": "embedsOne",
+      "model": "Qrcode",
+      "property": "qrcode",
+      "options": {
+        "validate": false,
+        "forceId": false
+      }
     }
   },
   "acls": [
