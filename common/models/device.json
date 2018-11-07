@@ -1,5 +1,6 @@
 {
   "name": "Device",
+  "description": "设备",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -14,7 +15,8 @@
   "properties": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "设备名称"
     },
     "equipmentNumber": {
       "type": "string",

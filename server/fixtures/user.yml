@@ -1,0 +1,6 @@
+User:
+  admin_user_john:
+    realm: 'wuyunan'
+    username: 'wuyunan'
+    email: 'wuyunan@test.com'
+    password: 'password'
