@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  
+  mongo:
+    image: mongo:4.0.2
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - '/srv/docker/helloserver/mongo:/data/db:Z'
+    networks:
+      - apinet
+  
+networks:
+  apinet:
+ 
